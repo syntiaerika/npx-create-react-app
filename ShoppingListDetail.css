@@ -1,0 +1,83 @@
+.shopping-list-detail {
+  font-family: 'San Francisco', sans-serif; 
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: #fff; 
+  border: none;
+  border-radius: 5px;
+  box-shadow: none;
+  color: #000; 
+}
+
+.shopping-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.shopping-list-header h2 {
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.shopping-list-detail h3 {
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.shopping-list-detail ul {
+  list-style: none;
+  padding: 0;
+}
+
+.shopping-list-detail li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.shopping-list-detail input[type="checkbox"] {
+  margin-right: 10px;
+  accent-color: #007AFF; 
+}
+
+.shopping-list-detail input[type="text"] {
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #000;
+}
+
+.shopping-list-detail button {
+  background-color: #007AFF; 
+  color: white;
+  padding: 5px 10px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.shopping-list-detail .filter {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.shopping-list-detail .filter button {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ddd;
+}
+
+.shopping-list-detail .done {
+  text-decoration: line-through;
+  color: #888;
+}

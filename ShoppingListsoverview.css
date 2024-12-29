@@ -1,0 +1,99 @@
+
+
+body {
+  background: linear-gradient(to bottom, #28313B, #485461); 
+  color: #fff; 
+  font-family: sans-serif; 
+  min-height: 100vh;
+  margin: 0; 
+}
+
+.shopping-lists-overview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.shopping-lists-overview h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  background: linear-gradient(to right, #4285F4, #EA4335, #FBBC05, #34A853); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.shopping-lists-overview button {
+  background-color: #1DB954;
+  color: white;
+  padding: 15px 25px; 
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: calc(50% - 20px); 
+  box-sizing: border-box;
+  transition: transform 0.2s ease; 
+}
+
+.shopping-lists-overview button:hover {
+  transform: scale(1.05); 
+}
+
+.shopping-lists-grid {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  width: 100%; 
+}
+
+.shopping-list-tile {
+  background-color: #282828;
+  border: 1px solid #333;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 10px; 
+}
+
+.shopping-list-tile a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #282828;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+
+/* mobily */
+@media (max-width: 768px) {
+  .shopping-lists-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+/*tablety */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .shopping-lists-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}

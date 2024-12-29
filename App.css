@@ -1,0 +1,32 @@
+body {
+  font-family: 'Arial', sans-serif;
+  color: var(--text-color);
+  background-color: #fff3fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background: linear-gradient(to bottom, #fff3fa, #ffe1ed);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #843c54;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
